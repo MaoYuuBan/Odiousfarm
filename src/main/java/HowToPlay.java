@@ -7,6 +7,7 @@ public class HowToPlay extends JFrame{
     private JButton             Back_Button;
     private JButton             Next_Button;
     
+    private MyImageIcon         BackGround_IMG;
     private MyImageIcon         Back_IMG;
     private MyImageIcon         Next_IMG;
     private MySoundEffect       Click_Sound;

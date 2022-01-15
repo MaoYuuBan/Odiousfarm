@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>my-app</name>
+	<name>Prd_Project_OdiousFarm</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1635852993048</id>
+			<id>1635849606950</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
