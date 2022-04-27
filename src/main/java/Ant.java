@@ -71,7 +71,7 @@ public class Ant extends Thread {
                 Hungry--;
                 drop();
                 This_Label.setLocation(CurX, CurY);
-                try { this.sleep(Speed); } 
+                try { Ant.sleep(Speed); } 
                 catch (InterruptedException e) { e.printStackTrace(); }
                 if(Hungry<1000&&!FOOD.isEmpty())break;
             } 
@@ -87,7 +87,7 @@ public class Ant extends Thread {
                 Hungry--;
                 drop();
                 This_Label.setLocation(CurX, CurY);
-                try { this.sleep(Speed); } 
+                try { Ant.sleep(Speed); } 
                 catch (InterruptedException e) { e.printStackTrace(); }
                 if(Hungry<1000&&!FOOD.isEmpty())break;
             }
@@ -103,7 +103,7 @@ public class Ant extends Thread {
                 Hungry--;
                 drop();
                 This_Label.setLocation(CurX, CurY);
-                try { this.sleep(Speed); } 
+                try { Ant.sleep(Speed); } 
                 catch (InterruptedException e) { e.printStackTrace(); }
                 if(Hungry<1000&&!FOOD.isEmpty())break;
             }
@@ -119,7 +119,7 @@ public class Ant extends Thread {
                 Hungry--;
                 drop();
                 This_Label.setLocation(CurX, CurY);
-                try { this.sleep(Speed); } 
+                try { Ant.sleep(Speed); } 
                 catch (InterruptedException e) { e.printStackTrace(); }
                 if(Hungry<1000&&!FOOD.isEmpty())break;
             }
@@ -166,7 +166,7 @@ public class Ant extends Thread {
             drop();
             This_Label.setLocation(CurX, CurY);
             if(Hungry<0)death();
-            try { this.sleep(Speed); } 
+            try { Ant.sleep(Speed); } 
             catch (InterruptedException e) { e.printStackTrace(); }
             //reached food
             if(This_Label.getBounds().intersects(FOOD.get(TargetFood).getFood_Label().getBounds())){
@@ -229,7 +229,7 @@ public class Ant extends Thread {
             else Num_Animation = 4;
             Hungry = Hungry + food.eaten();
             if(Hungry>=MaxHungry)break;
-            try { this.sleep(2); } 
+            try { Ant.sleep(2); } 
             catch (InterruptedException e) { e.printStackTrace(); }
         }
         Sound.get(2).stop();
@@ -253,7 +253,7 @@ public class Ant extends Thread {
         Num_Animation = 0;
         This_Label.setIcon(Image.get(12));
         Sound.get(3).playOnce();
-        try { this.sleep(1000); } 
+        try { Ant.sleep(1000); } 
         catch (InterruptedException e) { e.printStackTrace(); }
         gamepane.remove(This_Label);
         ANT.remove(this);
